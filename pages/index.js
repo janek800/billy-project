@@ -56,10 +56,42 @@ import { Client } from '../prismic-configuration'
           }
           
         </div>
-        
+        <div className="kontener"><div className="red"></div><div className="title"><h1>TIIIIIIIIIITle</h1></div><div className="blue"><h1>TEXXXXT</h1></div></div>
       </div>
       <InfoBottom />
       <style jsx>{`
+	.kontener {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height:402px;
+      }
+      .red{
+        // position: relative;
+        min-width: 400px;
+        min-height: 400px;
+        background-color: red;
+        z-index: 2;
+        opacity:0.5;
+      }
+      .title{
+        position: absolute;
+        color: white;
+        min-width: 400px;
+        min-height: 400px;
+        //margin-left: -400px;
+        z-index: 3;
+      }
+      .blue{
+        margin-left: -100px;
+        // position: absolute;
+        min-width: 500px;
+        min-height: 500px;
+        background-color: blue;
+        z-index: 1;
+        color: white;
+      }
       .block-blue-gray {
         background-color: #f7fafc;
         padding-bottom: 3.75rem 
